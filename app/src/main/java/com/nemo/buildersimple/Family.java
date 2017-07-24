@@ -7,7 +7,7 @@ import java.util.List;
  */
 public class Family {
 
-    private Father father = new Father();
+    private Father father;
     private Mother mother;
     private Daughter daughter;
     private String myFamily = "no name";

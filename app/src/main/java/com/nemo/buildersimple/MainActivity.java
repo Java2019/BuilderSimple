@@ -10,7 +10,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity
         implements View.OnClickListener{
 
-    public Family family = new Family();
+    private Family family = new Family();
     private Intent intent;
 
     @Override
