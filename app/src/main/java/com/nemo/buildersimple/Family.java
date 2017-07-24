@@ -14,8 +14,12 @@ public class Family {
 
         String myFamily = "";
 
-        myFamily = "Father`s name is - " + father
+        myFamily = "Father`s name is - " + father.getName() + ". " +
+                "Mother`s name is - " + mother.getName() + ". " +
+                "Daughter`s name is - " + daughter.getName() + ". ";
 
         return myFamily;
     }
+
+
 }
