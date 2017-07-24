@@ -20,8 +20,10 @@ public class nameFarther extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 editText = (EditText)findViewById(R.id.text);
-                father.setName(editText.getText().toString());
-                family.setFather(father);
+                try {
+                    father.setName(editText.getText().toString());
+                    family.setFather(father);
+                }catch (Exception e){}
                 //finish();
                 Toast.makeText(nameFarther.this, family.toString(), Toast.LENGTH_SHORT).show();
             }
