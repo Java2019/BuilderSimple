@@ -49,5 +49,6 @@ public class MainActivity extends AppCompatActivity
         if (data == null) {return;}
         String name = data.getStringExtra("name");
         family.getFather().setName(name);
+        family.toString();
     }
 }
