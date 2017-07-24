@@ -10,11 +10,11 @@ public class Family {
     private Father father;
     private Mother mother;
     private Daughter daughter;
+    private String myFamily = "";
 
     @Override
     public String toString() {
 
-        String myFamily = "";
 
         myFamily = "Father`s name is - " + father.getName() + ". " +
                 "Mother`s name is - " + mother.getName() + ". " +
