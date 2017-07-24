@@ -6,6 +6,9 @@ package com.nemo.buildersimple;
 public class Mother {
     private String name;
 
+    public Mother() {
+    }
+
     public Mother(String name) {
         this.name = name;
     }

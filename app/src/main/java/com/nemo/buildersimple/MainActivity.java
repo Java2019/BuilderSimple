@@ -10,7 +10,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity
         implements View.OnClickListener{
 
-    private Family family = new Family();
+    public Family family = new Family();
+    private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +32,8 @@ public class MainActivity extends AppCompatActivity
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.nameFarther:
-                startActivity(new Intent(this, nameFarther.class));
+                Intent intent = new Intent(this, nameFarther.class);
+                startActivityForResult(intent, 1);
                 break;
             case R.id.nameMorther:
                 startActivity(new Intent(this, nameMorther.class));
@@ -40,5 +42,12 @@ public class MainActivity extends AppCompatActivity
                 startActivity(new Intent(this, nameDaughter.class));
                 break;
         }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (data == null) {return;}
+        String name = data.getStringExtra("name");
+        family.getFather().setName(name);
     }
 }

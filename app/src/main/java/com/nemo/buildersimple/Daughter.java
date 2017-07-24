@@ -6,6 +6,9 @@ package com.nemo.buildersimple;
 public class Daughter {
     private String name;
 
+    public Daughter() {
+    }
+
     public Daughter(String name) {
         this.name = name;
     }

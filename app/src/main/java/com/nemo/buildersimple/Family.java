@@ -12,6 +12,12 @@ public class Family {
     private Daughter daughter;
     private String myFamily = "no name";
 
+    public Family() {
+        this.father = new Father();
+        this.mother = new Mother();
+        this.daughter = new Daughter();
+    }
+
     @Override
     public String toString() {
 
