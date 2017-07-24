@@ -1,5 +1,7 @@
 package com.nemo.buildersimple;
 
+import java.util.List;
+
 /**
  * Created by use on 24.07.17.
  */
@@ -21,5 +23,15 @@ public class Family {
         return myFamily;
     }
 
+    public void setFather(Father father) {
+        this.father = father;
+    }
 
+    public void setMother(Mother mother) {
+        this.mother = mother;
+    }
+
+    public void setDaughter(Daughter daughter) {
+        this.daughter = daughter;
+    }
 }
