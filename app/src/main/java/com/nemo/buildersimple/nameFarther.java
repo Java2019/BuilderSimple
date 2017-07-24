@@ -8,6 +8,10 @@ import android.widget.Toast;
 
 public class nameFarther extends AppCompatActivity {
 
+    private Father father;
+    private Family family;
+    private EditText editText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,10 +19,11 @@ public class nameFarther extends AppCompatActivity {
         findViewById(R.id.bFinish).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                EditText editText = (EditText)findViewById(R.id.text);
-                //new Family().getFather().setName(editText.getText().toString());
+                editText = (EditText)findViewById(R.id.text);
+                father.setName(editText.getText().toString());
+                family.setFather(father);
                 //finish();
-                Toast.makeText(nameFarther.this, new Family().toString(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(nameFarther.this, family.toString(), Toast.LENGTH_SHORT).show();
             }
         });
     }
