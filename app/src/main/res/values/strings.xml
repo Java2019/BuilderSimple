@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BuilderSimple</string>
+    <string name="myFamily">My family list</string>
+    <string name="set">Settings</string>
 </resources>
