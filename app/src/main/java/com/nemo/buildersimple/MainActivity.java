@@ -1,5 +1,6 @@
 package com.nemo.buildersimple;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -30,13 +31,13 @@ public class MainActivity extends AppCompatActivity
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.nameFarther:
-
+                startActivity(new Intent(this, nameFarther.class));
                 break;
             case R.id.nameMorther:
-
+                startActivity(new Intent(this, nameMorther.class));
                 break;
             case R.id.nameDaughter:
-
+                startActivity(new Intent(this, nameDaughter.class));
                 break;
         }
     }
