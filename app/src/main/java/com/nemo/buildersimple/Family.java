@@ -10,16 +10,18 @@ public class Family {
     private Father father;
     private Mother mother;
     private Daughter daughter;
-    private String myFamily = "";
+    private String myFamily = "no name";
 
     @Override
     public String toString() {
 
+        try {
+            myFamily = "Father`s name is - " + father.getName() + ". " +
+                    "Mother`s name is - " + mother.getName() + ". " +
+                    "Daughter`s name is - " + daughter.getName() + ". ";
+        } catch (Exception e){
 
-        myFamily = "Father`s name is - " + father.getName() + ". " +
-                "Mother`s name is - " + mother.getName() + ". " +
-                "Daughter`s name is - " + daughter.getName() + ". ";
-
+        }
         return myFamily;
     }
 
