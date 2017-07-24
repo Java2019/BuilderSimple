@@ -9,6 +9,13 @@ public class Family {
     private Mother mother;
     private Daughter daughter;
 
+    @Override
+    public String toString() {
 
+        String myFamily = "";
 
+        myFamily = "Father`s name is - " + father
+
+        return myFamily;
+    }
 }
