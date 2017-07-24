@@ -34,4 +34,16 @@ public class Family {
     public void setDaughter(Daughter daughter) {
         this.daughter = daughter;
     }
+
+    public Father getFather() {
+        return father;
+    }
+
+    public Mother getMother() {
+        return mother;
+    }
+
+    public Daughter getDaughter() {
+        return daughter;
+    }
 }
