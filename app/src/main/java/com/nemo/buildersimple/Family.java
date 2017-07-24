@@ -5,4 +5,10 @@ package com.nemo.buildersimple;
  */
 public class Family {
 
+    private Father father;
+    private Mother mother;
+    private Daughter daughter;
+
+
+
 }
