@@ -22,8 +22,8 @@ public class Family {
     public String toString() {
 
         try {
-            myFamily = "Father`s name is - " + father.getName() + ". " +
-                    "Mother`s name is - " + mother.getName() + ". " +
+            myFamily = "Father`s name is - " + father.getName() + ". \n" +
+                    "Mother`s name is - " + mother.getName() + ". \n" +
                     "Daughter`s name is - " + daughter.getName() + ". ";
         } catch (Exception e){
 

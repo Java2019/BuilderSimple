@@ -49,6 +49,6 @@ public class MainActivity extends AppCompatActivity
         if (data == null) {return;}
         String name = data.getStringExtra("name");
         family.getFather().setName(name);
-        family.toString();
+        Toast.makeText(this, family.toString(), Toast.LENGTH_LONG).show();
     }
 }
