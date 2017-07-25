@@ -30,6 +30,6 @@
         android:id="@+id/nameDaughter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:text="@string/nameDoughter"
         android:onClick="onClick"/>
 </LinearLayout>
