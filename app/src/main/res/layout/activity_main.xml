@@ -24,10 +24,12 @@
         android:id="@+id/nameMorther"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/nameMorther"
         android:onClick="onClick"/>
     <Button
         android:id="@+id/nameDaughter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:onClick="onClick"/>
 </LinearLayout>
