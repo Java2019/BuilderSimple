@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
-        implements View.OnClickListener{
+        implements View.OnClickListener {
 
     private Family family = new Family();
     private Intent intent;
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.nameFarther:
                 Intent intent = new Intent(this, nameFarther.class);
                 startActivityForResult(intent, 1);
@@ -46,7 +46,9 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (data == null) {return;}
+        if (data == null) {
+            return;
+        }
         String name = data.getStringExtra("name");
         family.getFather().setName(name);
         Toast.makeText(this, family.toString(), Toast.LENGTH_LONG).show();
