@@ -2,6 +2,7 @@ package com.nemo.buildersimple;
 
 import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -33,8 +34,13 @@ public class MainActivity extends AppCompatActivity
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.nameFarther:
-                Intent intent = new Intent(this, nameFarther.class);
-                startActivityForResult(intent, 1);
+                /*FragmentManager fm = getSupportFragmentManager();
+                fm.beginTransaction()
+                        .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
+                        .commit();
+
+                //Intent intent = new Intent(this, nameFarther.class);
+                //startActivityForResult(intent, 1);*/
                 break;
             case R.id.nameMorther:
                 startActivity(new Intent(this, nameMorther.class));

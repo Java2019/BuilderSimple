@@ -3,12 +3,14 @@ package com.nemo.buildersimple;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class BlankFragment extends Fragment {
+public class BlankFragment extends Fragment
+        implements View.OnClickListener{
 
 
     public BlankFragment() {
@@ -23,4 +25,12 @@ public class BlankFragment extends Fragment {
         return view;
     }
 
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.bFinish:
+                getView().setVisibility(view.INVISIBLE);
+                break;
+        }
+    }
 }
