@@ -33,7 +33,7 @@
         android:text="@string/nameDoughter"
         android:onClick="onClick"/>
     <fragment
-        android:id="@+id/contanier"
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:name="com.nemo.buildersimple.BlankFragment"/>
