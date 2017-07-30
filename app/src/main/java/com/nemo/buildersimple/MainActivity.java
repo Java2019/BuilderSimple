@@ -1,6 +1,7 @@
 package com.nemo.buildersimple;
 
 import android.content.Intent;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
@@ -34,9 +35,11 @@ public class MainActivity extends AppCompatActivity
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.nameFarther:
+                Fragment ft = getSupportFragmentManager().findFragmentById(R.id.container);
                 FragmentManager fm = getSupportFragmentManager();
                 fm.beginTransaction()
                         .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
+                        .hide(ft)
                         .commit();
 
                 //Intent intent = new Intent(this, nameFarther.class);

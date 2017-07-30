@@ -30,6 +30,7 @@ public class BlankFragment extends Fragment
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.bFinish:
+                getView().setVisibility(View.GONE);
                 Toast.makeText(getActivity(), "Name - ", Toast.LENGTH_LONG).show();
                 break;
         }
