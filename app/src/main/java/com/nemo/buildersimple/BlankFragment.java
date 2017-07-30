@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class BlankFragment extends Fragment
         implements View.OnClickListener{
@@ -29,7 +30,7 @@ public class BlankFragment extends Fragment
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.bFinish:
-                getView().setVisibility(view.INVISIBLE);
+                Toast.makeText(getActivity(), "Name - ", Toast.LENGTH_LONG).show();
                 break;
         }
     }
