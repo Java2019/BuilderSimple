@@ -32,4 +32,9 @@
         android:layout_height="wrap_content"
         android:text="@string/nameDoughter"
         android:onClick="onClick"/>
+    <fragment
+        android:id="@+id/contanier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.nemo.buildersimple.BlankFragment"/>
 </LinearLayout>
