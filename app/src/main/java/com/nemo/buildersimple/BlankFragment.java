@@ -1,6 +1,7 @@
 package com.nemo.buildersimple;
 
 
+import android.opengl.Visibility;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -30,6 +31,7 @@ public class BlankFragment extends Fragment
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.bFinish:
+
                 getView().setVisibility(View.GONE);
                 Toast.makeText(getActivity(), "Name - ", Toast.LENGTH_LONG).show();
                 break;
